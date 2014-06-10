@@ -1,0 +1,108 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container, .centered {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.nav {
+	background-color: green;
+}
+
+.navbar {
+	position: block;
+	padding-bottom: 45px;
+}
+
+div.navbar a {
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	margin: 5px;
+	font-size: 24px;
+	font-family: Courier;
+	text-align: center;
+	width: 100%;
+	/*background-color: green;*/
+	
+}
+
+div.list a {
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+	font-family: Tahoma;
+	font-size: 20px;
+}
+
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:active {
+	color: green;
+}
+
+div.navbar li {
+	float: left;
+}
+
+div.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	/*overflow: hidden;*/
+}
+
+table {
+	border: 1px solid black;
+	]
+	width: 100%;
+	/*text-align: center;*/
+}
+
+table,th,td {
+	 border-collapse: collapse;
+	 text-align: center;
+}
+
+th,td {
+	padding: 5px;
+	/*padding-bottom: 10px;*/
+	border-bottom: 1px solid black;
+}
+
+td {
+	line-height: 4;	
+}
+
+input {
+
+}
+
+.form-design {
+	border-style: solid groove;
+	padding: 20px;
+	/*width: 70%;*/
+}
+
+.error {
+	color: red;
+	display: none;
+}
+
+footer {
+	text-align: center;
+	font-size: small;
+	position: relative;
+	padding-top: 25px;
+}
