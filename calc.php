@@ -1,66 +1,66 @@
 <?php include_once "views/header.php"; ?>
-			<h2> Calculator </h2>
+		<h2> Calculator </h2>
 
-			<h3>
-			<!-- Simple hello message. -->
-			Hello there, 
-			<script> 
-				if (window.name == "")
-					document.write("Anonymous");
-				else
-				document.write(window.name); 
-			</script>! 
-			</h3>
+		<h3>
+		<!-- Simple hello message. -->
+		Hello there, 
+		<script> 
+			if (window.name == "")
+				document.write("Anonymous");
+			else
+			document.write(window.name); 
+		</script>! 
+		</h3>
 
-			<!-- Information used for calculaor -->
-			<form id="form" class="form-design" onsubmit="return false">
-				<h4>Please answer the following questions.</h4>
-				<p>How much do you make per pay period?</p>
-				<input id="income" name="income" type="number" value="100" placeholder="Amount">
-				<p>How often are you paid?</p>
-				<div id="payperiod">
-					<input name="pay" id="pay1" type="radio" value="week">Weekly
-					<input name="pay" id="pay2" type="radio" value="biweek">Bi-Weekly
-					<input name="pay" id="pay3" type="radio" value="month">Monthly
-				</div>
-				<p>What percentage would you like to spend?</p>
-				<input id="percentsave" name="percentsave" maxlength="3" type="number" value="25" placeholder="Percentage"><br><br>
-				<button id="submit" onclick="confirmValues()">Generate</button>
-			</form>
+		<!-- Information used for calculaor -->
+		<form id="form" class="form-design" onsubmit="return false">
+			<h4>Please answer the following questions.</h4>
+			<p>How much do you make per pay period?</p>
+			<input id="income" name="income" type="number" value="100" placeholder="Amount">
+			<p>How often are you paid?</p>
+			<div id="payperiod">
+				<input name="pay" id="pay1" type="radio" value="week">Weekly
+				<input name="pay" id="pay2" type="radio" value="biweek">Bi-Weekly
+				<input name="pay" id="pay3" type="radio" value="month">Monthly
+			</div>
+			<p>What percentage would you like to spend?</p>
+			<input id="percentsave" name="percentsave" maxlength="3" type="number" value="25" placeholder="Percentage"><br><br>
+			<button id="submit" onclick="confirmValues()">Generate</button>
+		</form>
 
-			<!-- Table to display information -->
-			<table id="table" style="display: none;">
-				<thead>
-					<tr>
-						<th>Time Saved</th>
-						<th>Can Spend ($)</th>
-						<th>Item</th>
-						<th>Price ($)</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>One Week</td>
-						<td><div id="weekAmt"></div></td>
-						<td><div id="weekItem"></div></td>
-						<td><div id="weekItemPr"></div></td>
-					</tr>
-					<tr>
-						<td>One Month</td>
-						<td><div id="monthAmt"></div></td>
-						<td><div id="monthItem"></div></td>
-						<td><div id="monthItemPr"></div></td>
-					</tr>
-					<tr>
-						<td>One Year</td>
-						<td><div id="yearAmt"></div></td>
-						<td><div id="yearItem"></div></td>
-						<td><div id="yearItemPr"></div></td>
-					</tr>
-				</tbody>
-			</table>
+		<!-- Table to display information -->
+		<table id="table" style="display: none;">
+			<thead>
+				<tr>
+					<th>Time Saved</th>
+					<th>Can Spend ($)</th>
+					<th>Item</th>
+					<th>Price ($)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>One Week</td>
+					<td><div id="weekAmt"></div></td>
+					<td><div id="weekItem"></div></td>
+					<td><div id="weekItemPr"></div></td>
+				</tr>
+				<tr>
+					<td>One Month</td>
+					<td><div id="monthAmt"></div></td>
+					<td><div id="monthItem"></div></td>
+					<td><div id="monthItemPr"></div></td>
+				</tr>
+				<tr>
+					<td>One Year</td>
+					<td><div id="yearAmt"></div></td>
+					<td><div id="yearItem"></div></td>
+					<td><div id="yearItemPr"></div></td>
+				</tr>
+			</tbody>
+		</table>
 
-		</div>
+	</div>
 
 	<script type="text/javascript">
 
